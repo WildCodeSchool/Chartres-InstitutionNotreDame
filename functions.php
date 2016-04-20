@@ -90,3 +90,4 @@ function filter_ptags_on_images($content)
 
 add_filter('the_content', 'filter_ptags_on_images'); 
 
+?>
