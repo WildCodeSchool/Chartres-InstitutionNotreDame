@@ -197,3 +197,17 @@ body
 {
 	height:50px;
 }
+
+/* TEMPLATE CONTENU */
+
+.template_contenu h3
+{
+	font-size: 40px;
+	margin: 20px 0 20px 0;
+	text-align: center;
+}
+
+.template_contenu_description
+{
+ padding:20px;
+}
