@@ -208,12 +208,6 @@ body
 	text-align:justify;
 }
 
-
-/* GALERIE */
-.galerie img {
-	width: auto;
-}
-
 /* FOOTER */
 
 .footer-top
@@ -230,19 +224,6 @@ body
 
 .footer-next
 {
-<<<<<<< HEAD
-	height:50px;
-}
-
-/*Template Contact*/
-
-.template_contact h3 {
-	height:40px;
-	text-align:center;
-	color:#5E9CD2;
-	padding-top:10px;
-}
-=======
 
 	height:50px;
 
@@ -260,4 +241,3 @@ body
 {
  padding:20px;
 }
->>>>>>> 16f207fba24017a32c34d32818c5155fbe02182a
