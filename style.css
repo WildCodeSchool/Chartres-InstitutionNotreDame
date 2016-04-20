@@ -197,3 +197,13 @@ body
 {
 	height:50px;
 }
+
+/*Template Contact*/
+
+.template_contact h3 {
+	background-color: #5E9CD2;
+	text-align: left;
+	color: white;
+	padding-left: 30px;
+	font-size: 1.6em;
+}
