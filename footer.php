@@ -18,6 +18,7 @@
 			</div>
 		</div>
 		<div class="col-md-12 footer-next">
+			Tous droits réservés - Design by Wild Code School
 		</div>
 	</body>
 </html>

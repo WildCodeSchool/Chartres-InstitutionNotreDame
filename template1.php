@@ -9,12 +9,6 @@ Template Name: template1
 <div class="col-md-12">
 
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
-      <!-- Indicators -->
-      <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-      </ol>
 
       <!-- Wrapper for slides -->
       <div class="carousel-inner" role="listbox">
@@ -23,7 +17,7 @@ Template Name: template1
             $args = array(
                 'post_type' => 'post',
                 'posts_per_page' => 1,
-                'category_name' => get_the_title().'-Carousel-Active',
+                'category_name' => get_the_title().'-carousel-active',
             );
 
             $my_query = new WP_Query($args);
@@ -46,7 +40,7 @@ Template Name: template1
             $args = array(
                 'post_type' => 'post',
                 'posts_per_page' => 2,
-                'category_name' => get_the_title().'-Carousel',
+                'category_name' => get_the_title().'-carousel',
             );
 
             $my_query = new WP_Query($args);
@@ -69,11 +63,11 @@ Template Name: template1
 
       <!-- Left and right controls -->
       <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
         <span class="sr-only">Previous</span>
       </a>
       <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
         <span class="sr-only">Next</span>
       </a>
     </div>
@@ -88,7 +82,7 @@ Template Name: template1
         $args = array(
             'post_type' => 'post',
             'posts_per_page' => 1,
-            'category_name' => get_the_title().'-Evénements',
+            'category_name' => get_the_title_mod().'-evenements',
         );
 
         $my_query = new WP_Query($args);
@@ -117,7 +111,7 @@ Template Name: template1
         $args = array(
             'post_type' => 'post',
             'posts_per_page' => 1,
-            'category_name' => get_the_title().'-Directeur',
+            'category_name' => get_the_title_mod().'-directeur',
         );
 
         $my_query = new WP_Query($args);
@@ -150,7 +144,7 @@ Template Name: template1
             $args = array(
                 'post_type' => 'post',
                 'posts_per_page' => 2,
-                'category_name' => get_the_title().'-Actualités-Principales',
+                'category_name' => get_the_title_mod().'-actualites-principales',
             );
 
             $my_query = new WP_Query($args);
@@ -175,7 +169,7 @@ Template Name: template1
             $args = array(
                 'post_type' => 'post',
                 'posts_per_page' => 4,
-                'category_name' => get_the_title().'-Actualités-Lignes',
+                'category_name' => get_the_title_mod().'-actualites-lignes',
             );
 
             $my_query = new WP_Query($args);
