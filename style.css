@@ -180,6 +180,12 @@ body
 	text-align:justify;
 }
 
+
+/* GALERIE */
+.galerie img {
+	width: auto;
+}
+
 /* FOOTER */
 
 .footer-top
