@@ -15,16 +15,16 @@
 		</div>
 
 		<div class="col-md-12 menu-nav">
-			<div class="col-md-2 menu-nav-part">
+			<div class="col-md-2 menu-nav-part" id="menu1">
 				<h4>Accueil</h4>
 			</div>
-			<div class="col-md-1 menu-nav-part">
+			<div class="col-md-1 menu-nav-part" id="menu3">
 				<h4>Collège</h4>
 			</div>
-			<div class="col-md-1 menu-nav-part">
+			<div class="col-md-1 menu-nav-part" id="menu2">
 				<h4>Lycées</h4>
 			</div>
-			<div class="col-md-2 menu-nav-part">
+			<div class="col-md-2 menu-nav-part" id="menu4">
 				<h4>ESCC Supérieur</h4>
 			</div>
 			<div class="col-md-1 menu-nav-part">
@@ -41,7 +41,43 @@
 			</div>
 		</div>
 
-		<div class="col-md-12 menu-contentTEST">
+		<div class="col-md-12 menu-content" id="dropdown1">
+			<div class="col-md-3 menu-left">
+				<?php wp_nav_menu( array(
+				'theme_location' => 'accueil-menu-1',
+				'container' => false,
+				'menu_class' => 'inner-menu'
+				)); ?>
+			</div>
+			<div class="col-md-2 menu-left">
+				<?php wp_nav_menu( array(
+				'theme_location' => 'accueil-menu-2',
+				'container' => false,
+				'menu_class' => 'inner-menu'
+				)); ?>
+			</div>
+			<div class="col-md-2 menu-left">
+				<?php wp_nav_menu( array(
+				'theme_location' => 'accueil-menu-3',
+				'container' => false,
+				'menu_class' => 'inner-menu' 
+				)); ?>
+			</div>
+			<div class="col-md-5 menu-right">
+			</div>
+		</div>
+
+		<div class="col-md-12 menu-content" id="dropdown2">
+			</div>
+			<div class="col-md-2 menu-left">
+			</div>
+			<div class="col-md-2 menu-left">
+			</div>
+			<div class="col-md-6 menu-right">
+			</div>
+		</div>
+
+		<div class="col-md-12 menu-content" id="dropdown3">
 			<div class="col-md-2 menu-left">
 			</div>
 			<div class="col-md-2 menu-left">
@@ -52,29 +88,7 @@
 			</div>
 		</div>
 
-		<div class="col-md-12 menu-content">
-			<div class="col-md-2 menu-left">
-			</div>
-			<div class="col-md-2 menu-left">
-			</div>
-			<div class="col-md-2 menu-left">
-			</div>
-			<div class="col-md-6 menu-right">
-			</div>
-		</div>
-
-		<div class="col-md-12 menu-content">
-			<div class="col-md-2 menu-left">
-			</div>
-			<div class="col-md-2 menu-left">
-			</div>
-			<div class="col-md-2 menu-left">
-			</div>
-			<div class="col-md-6 menu-right">
-			</div>
-		</div>
-
-		<div class="col-md-12 menu-content">
+		<div class="col-md-12 menu-content" id="dropdown4">
 			<div class="col-md-2 menu-left">
 			</div>
 			<div class="col-md-2 menu-left">
