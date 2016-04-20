@@ -37,6 +37,7 @@
 				<h4>Contact</h4>
 			</div>
 			<div class="col-md-2">
+			<form class="search_form"><?php get_search_form(); ?></form>
 			</div>
 		</div>
 
