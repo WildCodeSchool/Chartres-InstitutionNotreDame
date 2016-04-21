@@ -409,7 +409,81 @@ body
 {
 	height:50px;
 }
+/*
+*******STYLE SINGLE.PHP*******
+*/
+#single-h2 {
+	background-color: #5E9CD2; 
+	height: 50px;
+	line-height: 50px;
+	margin: 15px auto;
+	color:#FFFFFF;
+	font-size: 22px;
+	font-family: 'Roboto';
+	padding-left: 8px;
+}
+#article-seul {
+	margin-top: 10px;
+	padding-top: 15px;
+}
+.article-prew {
+	display: inline-block;
+	font-size: 18px;
+}
+.article-next {
+	display: inline-block;
+	float: right;
+	font-size: 18px;
+}
+#single-p {
+	float: left;
+	font-size: 18px;
+	margin-top: 30px;
+	margin-bottom: 15px;
+	padding:20px;
+	background-color: #FFFFFF;
+	border-left: solid 8px #5E9CD2 !important;
+	box-shadow: -2px 0px 2px inset;
+	
+}
+#single-p img {
+	float: left;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-right: 15px;
+}
+#single-title {
+	font-size: 18px;
+	text-transform:uppercase;
+}
+#single-p em {
+	margin-top: 10px;
+}
+#single-author {
+	font-style: italic;
+	font-size: 16px;
+}
 
+/*
+*******FIN STYLE SINGLE.PHP*******
+*/
+/*
+*******STYLE FORMULAIRE DE RECHERCHE*******
+*/
+.btn-blue {
+  border: solid 1px transparent;
+  background-color: #357EBD;
+}
+.btn-blue-l {
+  border: solid 1px transparent;
+  background-color: #5E9CD2;
+}
+.gly-white {
+  color: #FFFFFF;
+}
+/*
+*******FIN STYLE FORMULAIRE DE RECHERCHE*******
+*/
 /*
 *******STYLE SEARCH.PHP*******
 */
