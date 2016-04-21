@@ -17,10 +17,26 @@ $(document).ready(function()
 		if (open1 == "1")
 		{
 			$("#dropdown1").css("display", "none");
+			$("#menu1").css("background-color", "#5E9CD2");
+			$("#menu1").css("color", "#FFFFFF");
+			$("#menu2").css("background-color", "#5E9CD2");
+			$("#menu2").css("color", "#FFFFFF");
+			$("#menu3").css("background-color", "#5E9CD2");
+			$("#menu3").css("color", "#FFFFFF");
+			$("#menu4").css("background-color", "#5E9CD2");
+			$("#menu4").css("color", "#FFFFFF");
 			open1 = "0";
 		}
 		else
 		{
+			$("#menu1").css("background-color", "#FFFFFF");
+			$("#menu1").css("color", "#5E9CD2");
+			$("#menu2").css("background-color", "#5E9CD2");
+			$("#menu2").css("color", "#FFFFFF");
+			$("#menu3").css("background-color", "#5E9CD2");
+			$("#menu3").css("color", "#FFFFFF");
+			$("#menu4").css("background-color", "#5E9CD2");
+			$("#menu4").css("color", "#FFFFFF");
 			$("#dropdown1").css("display", "block");
 			$("#dropdown2").css("display", "none");
 			$("#dropdown3").css("display", "none");
@@ -40,10 +56,26 @@ $(document).ready(function()
 		if (open2 == "1")
 		{
 			$("#dropdown2").css("display", "none");
+			$("#menu1").css("background-color", "#5E9CD2");
+			$("#menu1").css("color", "#FFFFFF");
+			$("#menu2").css("background-color", "#5E9CD2");
+			$("#menu2").css("color", "#FFFFFF");
+			$("#menu3").css("background-color", "#5E9CD2");
+			$("#menu3").css("color", "#FFFFFF");
+			$("#menu4").css("background-color", "#5E9CD2");
+			$("#menu4").css("color", "#FFFFFF");
 			open2 = "0";
 		}
 		else
 		{
+			$("#menu1").css("background-color", "#5E9CD2");
+			$("#menu1").css("color", "#FFFFFF");
+			$("#menu2").css("background-color", "#FFFFFF");
+			$("#menu2").css("color", "#5E9CD2");
+			$("#menu3").css("background-color", "#5E9CD2");
+			$("#menu3").css("color", "#FFFFFF");
+			$("#menu4").css("background-color", "#5E9CD2");
+			$("#menu4").css("color", "#FFFFFF");
 			$("#dropdown1").css("display", "none");
 			$("#dropdown2").css("display", "block");
 			$("#dropdown3").css("display", "none");
@@ -63,10 +95,26 @@ $(document).ready(function()
 		if (open3 == "1")
 		{
 			$("#dropdown3").css("display", "none");
+			$("#menu1").css("background-color", "#5E9CD2");
+			$("#menu1").css("color", "#FFFFFF");
+			$("#menu2").css("background-color", "#5E9CD2");
+			$("#menu2").css("color", "#FFFFFF");
+			$("#menu3").css("background-color", "#5E9CD2");
+			$("#menu3").css("color", "#FFFFFF");
+			$("#menu4").css("background-color", "#5E9CD2");
+			$("#menu4").css("color", "#FFFFFF");
 			open3 = "0";
 		}
 		else
 		{
+			$("#menu1").css("background-color", "#5E9CD2");
+			$("#menu1").css("color", "#FFFFFF");
+			$("#menu2").css("background-color", "#5E9CD2");
+			$("#menu2").css("color", "#FFFFFF");
+			$("#menu3").css("background-color", "#FFFFFF");
+			$("#menu3").css("color", "#5E9CD2");
+			$("#menu4").css("background-color", "#5E9CD2");
+			$("#menu4").css("color", "#FFFFFF");
 			$("#dropdown1").css("display", "none");
 			$("#dropdown2").css("display", "none");
 			$("#dropdown3").css("display", "block");
@@ -86,10 +134,26 @@ $(document).ready(function()
 		if (open4 == "1")
 		{
 			$("#dropdown4").css("display", "none");
+			$("#menu1").css("background-color", "#5E9CD2");
+			$("#menu1").css("color", "#FFFFFF");
+			$("#menu2").css("background-color", "#5E9CD2");
+			$("#menu2").css("color", "#FFFFFF");
+			$("#menu3").css("background-color", "#5E9CD2");
+			$("#menu3").css("color", "#FFFFFF");
+			$("#menu4").css("background-color", "#5E9CD2");
+			$("#menu4").css("color", "#FFFFFF");
 			open4 = "0";
 		}
 		else
 		{
+			$("#menu1").css("background-color", "#5E9CD2");
+			$("#menu1").css("color", "#FFFFFF");
+			$("#menu2").css("background-color", "#5E9CD2");
+			$("#menu2").css("color", "#FFFFFF");
+			$("#menu3").css("background-color", "#5E9CD2");
+			$("#menu3").css("color", "#FFFFFF");
+			$("#menu4").css("background-color", "#FFFFFF");
+			$("#menu4").css("color", "#5E9CD2");
 			$("#dropdown1").css("display", "none");
 			$("#dropdown2").css("display", "none");
 			$("#dropdown3").css("display", "none");
@@ -97,4 +161,7 @@ $(document).ready(function()
 			open4 = "1";
 		}
 	});
+
+	$(".inner-menu .sub-menu .sub-menu li").removeClass();
+	$(".inner-menu .sub-menu .sub-menu li").addClass("col-md-3");
 });

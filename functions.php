@@ -6,9 +6,9 @@ add_theme_support( 'post-thumbnails' );
 function register_my_menus() {
   register_nav_menus(
     array(
-      'accueil-menu-1'  => __( 'accueil-menu-1' ),
-      'accueil-menu-2'  => __( 'accueil-menu-2' ),
-      'accueil-menu-3'  => __( 'accueil-menu-3' ),
+      'ecole-menu-1'  => __( 'ecole-menu-1' ),
+      'ecole-menu-2'  => __( 'ecole-menu-2' ),
+      'ecole-menu-3'  => __( 'ecole-menu-3' ),
       'college-menu-1'  => __( 'college-menu-1' ),
       'college-menu-2'  => __( 'college-menu-2' ),
       'college-menu-3'  => __( 'college-menu-3' ),
@@ -21,6 +21,8 @@ function register_my_menus() {
       'college-accueil-infos'  => __( 'college-accueil-infos' ),
       'lycee-accueil-infos'  => __( 'lycee-accueil-infos' ),
       'escc-accueil-infos'  => __( 'escc-accueil-infos' ),
+      'footer-menu-1'  => __( 'footer-menu-1' ),
+      'footer-menu-2'  => __( 'footer-menu-2' ),
     )
   );
 }
@@ -96,4 +98,28 @@ function filter_ptags_on_images($content)
 }
 
 add_filter('the_content', 'filter_ptags_on_images'); 
+
+//empêcher l'éditeur wysiwyg d'ajouter des balises <p> et <br> :
+//sur les fichiers 'content'
+remove_filter( 'the_content', 'wpautop' );
+//sur les fichiers 'exerpt'
+remove_filter( 'the_excerpt', 'wpautop' );
+/**
+ * 
+ * MODIFICATION DU FORMULAIRE PAR DEFAULT
+ *
+ */
+function NouveauFormulaire( $form ) {
+    $form = '<form class="navbar-form navbar-right nav-form-bottom hidden-sm" role="search" method="get" action="' . home_url( '/' ) . '">
+            <div class="input-group form-mg-l-r">
+            <input type="text" class="form-control"  value="' . get_search_query() . '" name="s" id="s" />
+                <div class="input-group-btn">
+                    <button class="btn btn-blue" type="submit"><i class="glyphicon glyphicon-search gly-white"></i></button>
+                </div>
+            </div>
+            </form>';
+ 
+    return $form;
+}
+add_filter( 'get_search_form', 'NouveauFormulaire' );
 

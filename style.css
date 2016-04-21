@@ -10,6 +10,7 @@ Description: Thèe de l'Institution Notre Dame !
 body
 {
 	background-color:#F2F2F2;
+	font-family: 'Calibri';
 }
 
 .main-offset
@@ -23,7 +24,184 @@ body
 	text-align:center;
 	margin:auto;
 }
+/****HEADER****/
+.container__header {
+  padding-left: 0;
+  padding-right: 0;
+  font-size: 16px !important;
 
+
+  /*background-color: #00587A;*/
+
+  background-image: -webkit-linear-gradient(top, #5e9cd2 0%, #357ebd 100%);
+  background-image: linear-gradient(to bottom, #5e9cd2 0%, #357ebd 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff5e9cd2', endColorstr='#ff357ebd', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  border-radius: 4px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 5px rgba(0, 0, 0, 0.075);
+
+  border-radius: 0 ;
+}
+
+.container__header .header > div {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.container__header .header .header-logo {
+  text-align: center;
+}
+
+.container__header .header .header-logo a {
+    display: inline-block;
+    height: 100%;
+   
+}
+
+.container__header .header .header-logo a img {
+ 
+}
+.container__header .header .header-title {
+  height: 100%;
+  text-align: center;
+  
+}
+
+.container__header .header .header-title h1 {
+  margin-top: 36px;
+  font-size: 3em;
+  color: #FFFFFF;
+}
+
+.container__header .header .header-title h2 {
+  padding-top: 10px;
+  padding-left: 40px;
+  color: #EDD834;
+  font-size: 2em;
+}
+.container__header .header .projet-inter {
+  height: 100%;
+
+}
+/*STYLE ELEMENT GLOBE HEADER IND*/
+.container-globe {
+  display: flex;
+}
+.globe {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  margin: 40px 20px;
+  border-radius: 50%;
+  -webkit-perspective: 1200px;
+  -moz-perspective: 1200px;
+  -ms-perspective: 1200px;
+  -o-perspective: 1200px;
+  perspective: 1200px;
+  -webkit-perspective-origin: 50% 50%;
+  -moz-perspective-origin: 50% 50%;
+  -ms-perspective-origin: 50% 50%;
+  -o-perspective-origin: 50% 50%;
+  perspective-origin: 50% 50%;
+  background: radial-gradient(circle at 100px 100px, #5cabff, #000);
+}
+
+.globe:before {
+  content: "";
+  position: absolute;
+  background: radial-gradient(circle at 50% 120%,  rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0) 70%);
+  border-radius: 50%;
+  bottom: 2.5%;
+  left: 5%;
+  opacity: 0.6;
+  height: 100%;
+  width: 90%;
+  -webkit-filter: blur(5px);
+  z-index: 2;
+}
+
+.map {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  border-radius: 50%;
+  position: relative;
+  -webkit-transform-style: preserve-3d;
+  background:url(img/world-map1.png) repeat-x;
+  background-size: auto 100%;
+  -webkit-animation: move-map 30s infinite linear;
+  -moz-animation: move-map 30s infinite linear;
+  -o-animation: move-map 30s infinite linear;
+  -ms-animation: move-map 30s infinite linear;
+  animation: move-map 30s infinite linear;
+}
+
+@-moz-keyframes move-map {
+  0% {background-position: -849px 0;}
+  100% {background-position: 0 0;} 
+}
+
+@-webkit-keyframes move-map {
+  0% {background-position: 0 0;}
+  100% {background-position: -849px 0;}
+}
+
+@-o-keyframes move-map {
+  0% {background-position: -849px 0;}
+  100% {background-position: 0 0;}
+  }
+
+@-ms-keyframes move-map {
+  0% {background-position: -849px 0;}
+  100% {background-position: 0 0;}
+  }
+
+@keyframes move-map {
+  0% {background-position: -849px 0;}
+  100% {background-position: 0 0;}
+  }
+
+.slogan {
+  line-height: 100px;
+  height: 100px;
+  font-size: 30px;
+  font-family: 'Dancing Script';
+  margin-left: 15px;
+  margin-top: 20px;
+  transform: rotate(-6deg);
+  color: #BBA900;
+}
+@keyframes changeColor{/* Standard syntax */
+  0%{color:rgba(229,187,110,1);}
+  17%{color:rgba(187,174,152,1);}
+  34%{color:rgba(179,177,145,1);}
+  51%{color:rgba(250,234,115,1);}
+  68%{color:rgba(221,152,92,1);}
+  85%{color:rgba(127,91,88,1);}
+  100%{color:rgba(229,187,110,1);}
+}
+@-webkit-keyframes changeColor{/* Chrome, Safari, Opera */
+  0%{color:rgba(229,187,110,1);}
+  17%{color:rgba(187,174,152,1);}
+  34%{color:rgba(179,177,145,1);}
+  51%{color:rgba(250,234,115,1);}
+  68%{color:rgba(221,152,92,1);}
+  85%{color:rgba(127,91,88,1);}
+  100%{color:rgba(229,187,110,1);}
+}
+.slogan {
+  -webkit-animation-name:changeColor;
+  -webkit-animation-duration:14s;
+  -webkit-animation-iteration-count:2;
+  animation-name:changeColor;
+  animation-duration:14s;/*durée de l'animation*/
+  animation-iteration-count:2;/*durée de l'animation*/
+}
+
+
+/****HEADER****/
 /* HEADER */
 
 .menu-top
@@ -48,7 +226,7 @@ body
 
 .menu-content
 {
-	height:400px;
+	min-height:400px;
 	background-color:#FFFFFF;
 	border:solid #5E9CD2 5px;
 	padding:10px;
@@ -57,12 +235,18 @@ body
 
 .menu-left
 {
-	height:auto;
+	padding:0px !important;
 }
 
 .menu-right
 {
-	height:auto;
+	padding:0px !important;
+}
+
+.menu-right img
+{
+	min-height:150px;
+	min-width:150px;
 }
 
 .inner-menu
@@ -94,6 +278,13 @@ body
 	color:#444;
 	border-bottom:none;
 	margin-left:-45px;
+}
+
+.inner-menu .sub-menu .sub-menu li a
+{
+	font-size:15px;
+	color:#428bca;
+	border-bottom:none;
 }
 
 /* CONTENT */
@@ -230,8 +421,150 @@ body
 
 .footer-next
 {
-	height:50px;
+	height: 40px;
+	text-align: center;
 }
+
+
+.footer-menu li a {
+	font-size:15px;
+	padding:5px;
+	color: #d3e4e4;	
+	margin-left: -20px;
+}	
+
+.footer-menu li {
+	list-style-type: none;
+}
+}
+/*
+*******STYLE SINGLE.PHP*******
+*/
+#single-h2 {
+	background-color: #5E9CD2; 
+	height: 50px;
+	line-height: 50px;
+	margin: 15px auto;
+	color:#FFFFFF;
+	font-size: 22px;
+	font-family: 'Roboto';
+	padding-left: 8px;
+}
+#article-seul {
+	margin-top: 10px;
+	padding-top: 15px;
+}
+.article-prew {
+	display: inline-block;
+	font-size: 18px;
+}
+.article-next {
+	display: inline-block;
+	float: right;
+	font-size: 18px;
+}
+#single-p {
+	float: left;
+	font-size: 18px;
+	margin-top: 30px;
+	margin-bottom: 15px;
+	padding:20px;
+	background-color: #FFFFFF;
+	border-left: solid 8px #5E9CD2 !important;
+	box-shadow: -2px 0px 2px inset;
+	
+}
+#single-p img {
+	float: left;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-right: 15px;
+}
+#single-title {
+	font-size: 18px;
+	text-transform:uppercase;
+}
+#single-p em {
+	margin-top: 10px;
+}
+#single-author {
+	font-style: italic;
+	font-size: 16px;
+}
+
+.footer-part h4 {
+	margin-left: 10px;
+}
+
+/* TEMPLATE CONTACT */
+
+/*
+*******FIN STYLE SINGLE.PHP*******
+*/
+/*
+*******STYLE FORMULAIRE DE RECHERCHE*******
+*/
+.btn-blue {
+  border: solid 1px transparent;
+  background-color: #357EBD;
+}
+.btn-blue-l {
+  border: solid 1px transparent;
+  background-color: #5E9CD2;
+}
+.gly-white {
+  color: #FFFFFF;
+}
+/*
+*******FIN STYLE FORMULAIRE DE RECHERCHE*******
+*/
+/*
+*******STYLE SEARCH.PHP*******
+*/
+.search {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.container-search {
+	padding-right: 80px;
+	padding-left: 80px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	box-shadow: inset 0px 0px 8px #000000;
+	background-color: #EEEEEE;
+}
+#search-h2 {
+	background-color: #5E9CD2; 
+	height: 50px;
+	line-height: 50px;
+	margin: 15px auto;
+	color:#FFFFFF;
+	font-size: 22px;
+	font-family: 'Roboto';
+	padding-left: 8px;
+}
+#search-p {
+	font-size: 18px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	padding:20px;
+	background-color: #FFFFFF;
+	border-left: solid 8px #5E9CD2 !important;
+	box-shadow: -2px 0px 2px inset;
+}
+#search-p img {
+	float: left;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-right: 15px;
+}
+#search-title {
+	font-size: 18px;
+	text-transform:uppercase;
+}
+/*
+*******FIN STYLE SEARCH.PHP*******
+*/
 
 /*Template Contact*/
 
@@ -240,8 +573,6 @@ body
 	margin: 20px 0 20px 0;
 	text-align: center;
 }
-
-
 
 /* TEMPLATE CONTENU */
 
