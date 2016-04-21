@@ -233,7 +233,17 @@ body
 	height:50px;
 }
 
-/*Template Contact*/
+.footer-menu li a {
+	font-size:15px;
+	padding:5px;
+	color: white;	
+}
+
+.footer-part h4 {
+	margin-left: 10px;
+}
+
+/* TEMPLATE CONTACT */
 
 .template_contact h3 {
 	font-size:30px;
