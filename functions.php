@@ -1,5 +1,8 @@
 <?php
+// On ajoute le support des vignettes/miniatures d'articles
+add_theme_support( 'post-thumbnails' );
 
+// menus
 function register_my_menus() {
   register_nav_menus(
     array(
@@ -14,6 +17,10 @@ function register_my_menus() {
       'lycee-menu-3'  => __( 'lycee-menu-3' ),
       'escc-menu-1'  => __( 'escc-menu-1' ),
       'escc-menu-2'  => __( 'escc-menu-2' ),
+      'ecole-accueil-infos'  => __( 'ecole-accueil-infos' ),
+      'college-accueil-infos'  => __( 'college-accueil-infos' ),
+      'lycee-accueil-infos'  => __( 'lycee-accueil-infos' ),
+      'escc-accueil-infos'  => __( 'escc-accueil-infos' ),
       'footer-menu-1'  => __( 'footer-menu-1' ),
       'footer-menu-2'  => __( 'footer-menu-2' ),
     )
@@ -71,16 +78,16 @@ function get_the_title_mod( $post = 0 ) {
      * @param int    $id    The post ID.
      */
 
-    $target1 = array("é", "è", "ê");
-    $target2 = array("à");
+    $target1 = array("é", "è", "ê", "É", "È");
+    $target2 = array("à", "À");
     $target3 = array("'", " ");
-    $target4 = array("ï", "î");
+    $target4 = array("ï", "î", "Î");
 
+    $title = strtolower($title);
     $title = str_replace($target1, 'e', $title);
     $title = str_replace($target2, 'a', $title);
     $title = str_replace($target3, '-', $title);
     $title = str_replace($target4, 'i', $title);
-    $title = strtolower($title);
 
     return apply_filters( 'the_title', $title, $id );
 }
