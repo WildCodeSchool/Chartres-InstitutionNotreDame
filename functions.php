@@ -136,8 +136,14 @@ add_filter('excerpt_length','nbMotsExtrait');
         FONCTION QUI AFFICHE LE SYMBOLE EN FIN D'ARTICLE
     =========================================================
 */
-function finExtrait($more) {
-    return 'lire la suite...';
+function finExtrait( $more ) {
+    return sprintf( '<a class="read-more" href="%1$s">%2$s</a>',
+        get_permalink( get_the_ID() ),
+        __( ' lire la suite .....', 'textdomain' )
+    );
 }
+// function finExtrait($more) {
+//     return sprintf( '<a class="read-more" href="%1$s">%2$s</a>',get_permalink( get_the_ID() ),__( 'Lire la suite', 'textdomain' )
+// }
 add_filter('excerpt_more','finExtrait');
 
