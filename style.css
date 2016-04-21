@@ -458,7 +458,13 @@ body
 *******FIN STYLE SEARCH.PHP*******
 */
 
+/*Template Contact*/
 
+.template_contact h3 {
+	font-size:30px;
+	margin: 20px 0 20px 0;
+	text-align: center;
+}
 
 /* TEMPLATE CONTENU */
 
@@ -471,6 +477,6 @@ body
 
 .template_contenu_description
 {
- padding:20px;
+ padding: 20px;
 }
 

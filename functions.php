@@ -90,7 +90,6 @@ function filter_ptags_on_images($content)
 
 add_filter('the_content', 'filter_ptags_on_images'); 
 
-
 //empêcher l'éditeur wysiwyg d'ajouter des balises <p> et <br> :
 //sur les fichiers 'content'
 remove_filter( 'the_content', 'wpautop' );
