@@ -3,9 +3,9 @@
 function register_my_menus() {
   register_nav_menus(
     array(
-      'accueil-menu-1'  => __( 'accueil-menu-1' ),
-      'accueil-menu-2'  => __( 'accueil-menu-2' ),
-      'accueil-menu-3'  => __( 'accueil-menu-3' ),
+      'ecole-menu-1'  => __( 'ecole-menu-1' ),
+      'ecole-menu-2'  => __( 'ecole-menu-2' ),
+      'ecole-menu-3'  => __( 'ecole-menu-3' ),
       'college-menu-1'  => __( 'college-menu-1' ),
       'college-menu-2'  => __( 'college-menu-2' ),
       'college-menu-3'  => __( 'college-menu-3' ),
@@ -14,6 +14,8 @@ function register_my_menus() {
       'lycee-menu-3'  => __( 'lycee-menu-3' ),
       'escc-menu-1'  => __( 'escc-menu-1' ),
       'escc-menu-2'  => __( 'escc-menu-2' ),
+      'footer-menu-1'  => __( 'footer-menu-1' ),
+      'footer-menu-2'  => __( 'footer-menu-2' ),
     )
   );
 }
