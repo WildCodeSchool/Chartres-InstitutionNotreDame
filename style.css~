@@ -1,0 +1,243 @@
+/*
+Theme Name: ind
+Author: WildCodeSchool
+Author URI: http://wildcodeschool.fr/
+Description: Thèe de l'Institution Notre Dame !
+*/
+
+/* GLOBAL */
+
+body
+{
+	background-color:#F2F2F2;
+}
+
+.main-offset
+{
+	height:25px;
+}
+
+.main-carousel img
+{
+	max-height:500px;
+	text-align:center;
+	margin:auto;
+}
+
+/* HEADER */
+
+.menu-top
+{
+	height:200px;
+	background-color:#357EBD;
+}
+
+.menu-nav
+{
+	min-height:50px;
+	background-color:#5E9CD2;
+	cursor:pointer;
+}
+
+.menu-nav-part
+{
+	text-align:center;
+	padding:5px;
+	color:#FFFFFF;
+}
+
+.menu-content
+{
+	height:400px;
+	background-color:#FFFFFF;
+	border:solid #5E9CD2 5px;
+	padding:10px;
+	display:none;
+}
+
+.menu-left
+{
+	height:auto;
+}
+
+.menu-right
+{
+	height:auto;
+}
+
+.inner-menu
+{
+	list-style:none
+}
+
+.inner-menu .sub-menu
+{
+	list-style:none
+}
+
+.inner-menu li
+{
+	padding:5px;
+}
+
+.inner-menu li a
+{
+	font-size:20px;
+	padding:5px;
+	color:#428bca;
+	border-bottom:solid #D8D8D8 1px;
+}
+
+.inner-menu .sub-menu li a
+{
+	font-size:15px;
+	color:#444;
+	border-bottom:none;
+	margin-left:-45px;
+}
+
+/* CONTENT */
+
+.global-div
+{
+	min-height:370px;
+	border: solid #5E9CD2 1px;
+	padding:0px !important;
+}
+
+.global-content
+{
+	padding:10px;
+}
+
+.global-large-div
+{
+	min-height:500px;
+	border: solid #5E9CD2 1px;
+	padding:0px !important;
+}
+
+.global-title
+{
+	height:50px;
+	background-color:#5E9CD2;
+}
+
+.global-title h3
+{
+	color:#FFFFFF;
+}
+
+.main-top
+{
+	margin-top:10px;
+	padding:10px;
+	background-color:#FFFFFF;
+	min-height:350px;
+}
+
+.main-top img
+{
+	width:30%;
+	float:left;
+	height:auto;
+	padding:10px;
+}
+
+.main-top p
+{
+	float:right;
+	height:auto;
+}
+
+.national-texte
+{
+	text-align:center;
+	margin-top:50px;
+}
+
+.national-texte-right
+{
+	margin-top:50px;
+	background-color:#FFFFFF;
+	min-height:250px;
+}
+
+.national-texte img
+{
+	width:80%;
+	height:auto;
+	margin:auto;
+}
+
+.main-actu
+{
+	height:430px;
+	margin-top:10px;
+	padding:10px;
+	background-color:#FFFFFF;
+}
+
+.main-actu img
+{
+	width:90%;
+	height:auto;
+	margin-left: 5%;
+}
+
+.main-actu p
+{
+	text-align:justify;
+}
+
+.line-actu
+{
+	min-height:125px;
+	padding:10px;
+	background-color:#FFFFFF;
+}
+
+.line-actu h3
+{
+	font-size:20px;
+	font-weight:bold;
+}
+
+.line-actu p
+{
+	text-align:justify;
+}
+
+/* FOOTER */
+
+.footer-top
+{
+	min-height:300px;
+	background-color:#5E9CD2;
+}
+
+.footer-part
+{
+	text-align:center;
+	color:#FFFFFF;
+}
+
+.footer-next
+{
+
+	height:50px;
+
+
+/* TEMPLATE CONTENU */
+
+.template_contenu h3
+{
+	font-size: 40px;
+	margin: 20px 0 20px 0;
+	text-align: center;
+}
+
+.template_contenu_description
+{
+ padding:20px;
+}

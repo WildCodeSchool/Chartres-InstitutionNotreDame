@@ -14,6 +14,8 @@ function register_my_menus() {
       'lycee-menu-3'  => __( 'lycee-menu-3' ),
       'escc-menu-1'  => __( 'escc-menu-1' ),
       'escc-menu-2'  => __( 'escc-menu-2' ),
+      'footer-menu-1'  => __( 'footer-menu-1' ),
+      'footer-menu-2'  => __( 'footer-menu-2' ),
     )
   );
 }
@@ -89,3 +91,9 @@ function filter_ptags_on_images($content)
 }
 
 add_filter('the_content', 'filter_ptags_on_images'); 
+
+//empêcher l'éditeur wysiwyg d'ajouter des balises <p> et <br> :
+//sur les fichiers 'content'
+remove_filter( 'the_content', 'wpautop' );
+//sur les fichiers 'exerpt'
+remove_filter( 'the_excerpt', 'wpautop' );
