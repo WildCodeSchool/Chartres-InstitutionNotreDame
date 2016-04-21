@@ -104,7 +104,7 @@ add_filter('the_content', 'filter_ptags_on_images');
 remove_filter( 'the_content', 'wpautop' );
 //sur les fichiers 'exerpt'
 remove_filter( 'the_excerpt', 'wpautop' );
-/**
+/*
  * 
  * MODIFICATION DU FORMULAIRE PAR DEFAULT
  *
@@ -122,4 +122,22 @@ function NouveauFormulaire( $form ) {
     return $form;
 }
 add_filter( 'get_search_form', 'NouveauFormulaire' );
+/*
+    =========================================================
+        FONCTION QUI AFFICHE LE NOMBRE DE MOT DES EXTRAITS
+    =========================================================
+*/
+function nbMotsExtrait($length){
+    return 20;
+}
+add_filter('excerpt_length','nbMotsExtrait');
+/*
+    =========================================================
+        FONCTION QUI AFFICHE LE SYMBOLE EN FIN D'ARTICLE
+    =========================================================
+*/
+function finExtrait($more) {
+    return 'lire la suite...';
+}
+add_filter('excerpt_more','finExtrait');
 
