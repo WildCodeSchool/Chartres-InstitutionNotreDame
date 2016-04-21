@@ -230,21 +230,17 @@ body
 
 .footer-next
 {
-<<<<<<< HEAD
 	height:50px;
 }
 
 /*Template Contact*/
 
 .template_contact h3 {
-	height:40px;
-	text-align:center;
-	color:#5E9CD2;
-	padding-top:10px;
+	font-size:30px;
+	margin: 20px 0 20px 0;
+	text-align: center;
 }
-=======
 
-	height:50px;
 
 
 /* TEMPLATE CONTENU */
@@ -258,6 +254,6 @@ body
 
 .template_contenu_description
 {
- padding:20px;
+ padding: 20px;
 }
->>>>>>> 16f207fba24017a32c34d32818c5155fbe02182a
+
