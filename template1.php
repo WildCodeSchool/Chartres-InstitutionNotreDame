@@ -208,7 +208,31 @@ Template Name: accueil
 	<div class="col-md-3 col-md-offset-1 national-texte">
         <img src="<?php echo get_template_directory_uri(); ?>/img/monde.png" class="img-responsive">
     </div>
-    <div class="col-md-6 national-texte-right">
+    <div class="col-md-7 national-texte-right">
+    <?php
+
+        $args = array(
+            'post_type' => 'post',
+            'posts_per_page' => 1,
+            'category_name' => get_the_title_mod().'-projet-international',
+        );
+
+        $my_query = new WP_Query($args);
+
+        if($my_query->have_posts()) : while ($my_query->have_posts() ) : $my_query->the_post();
+    
+    ?> 
+
+    <div class="col-md-12 main-top">
+        <?php the_content(); ?>
+        <?php the_excerpt(); ?>
+    </div>
+
+    <?php
+        endwhile;
+        endif;
+        wp_reset_postdata();
+    ?>
     </div>
 </div>
 

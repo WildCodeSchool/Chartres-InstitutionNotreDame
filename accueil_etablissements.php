@@ -21,7 +21,7 @@ Template Name: template1
         $args = array(
             'post_type' => 'post',
             'posts_per_page' => 1,
-            'category_name' => get_the_title_mod().'-l-etablissement',
+            'category_name' => get_the_title_mod().'-letablissement',
         );
 
         $my_query = new WP_Query($args);
@@ -51,7 +51,7 @@ Template Name: template1
         $args = array(
             'post_type' => 'post',
             'posts_per_page' => 1,
-            'category_name' => get_the_title_mod().'-l-ecole',
+            'category_name' => get_the_title_mod().'-lecole',
         );
 
         $my_query = new WP_Query($args);
