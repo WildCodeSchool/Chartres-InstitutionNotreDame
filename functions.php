@@ -3,9 +3,9 @@
 function register_my_menus() {
   register_nav_menus(
     array(
-      'accueil-menu-1'  => __( 'accueil-menu-1' ),
-      'accueil-menu-2'  => __( 'accueil-menu-2' ),
-      'accueil-menu-3'  => __( 'accueil-menu-3' ),
+      'ecole-menu-1'  => __( 'ecole-menu-1' ),
+      'ecole-menu-2'  => __( 'ecole-menu-2' ),
+      'ecole-menu-3'  => __( 'ecole-menu-3' ),
       'college-menu-1'  => __( 'college-menu-1' ),
       'college-menu-2'  => __( 'college-menu-2' ),
       'college-menu-3'  => __( 'college-menu-3' ),

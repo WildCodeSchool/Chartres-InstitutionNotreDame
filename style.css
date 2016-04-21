@@ -10,6 +10,7 @@ Description: Thèe de l'Institution Notre Dame !
 body
 {
 	background-color:#F2F2F2;
+	font-family: 'Calibri';
 }
 
 .main-offset
@@ -48,7 +49,7 @@ body
 
 .menu-content
 {
-	height:400px;
+	min-height:400px;
 	background-color:#FFFFFF;
 	border:solid #5E9CD2 5px;
 	padding:10px;
@@ -57,12 +58,18 @@ body
 
 .menu-left
 {
-	height:auto;
+	padding:0px !important;
 }
 
 .menu-right
 {
-	height:auto;
+	padding:0px !important;
+}
+
+.menu-right img
+{
+	min-height:150px;
+	min-width:150px;
 }
 
 .inner-menu
@@ -94,6 +101,13 @@ body
 	color:#444;
 	border-bottom:none;
 	margin-left:-45px;
+}
+
+.inner-menu .sub-menu .sub-menu li a
+{
+	font-size:15px;
+	color:#428bca;
+	border-bottom:none;
 }
 
 /* CONTENT */
