@@ -39,7 +39,7 @@
 		<!-- END HEADER -->
 		<div class="col-md-12 menu-nav">
 			<div class="col-md-1 menu-nav-part">
-				<a href="index.php"><img src="<?php echo get_template_directory_uri(); ?>/img/logo-accueil.png"></a>
+				<a href="<?php echo get_home_url(); ?>/index.php"><img src="<?php echo get_template_directory_uri(); ?>/img/logo-accueil.png"></a>
 			</div>
 			<div class="col-md-1 menu-nav-part">
 				

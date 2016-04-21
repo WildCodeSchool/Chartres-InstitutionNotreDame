@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: template1
+Template Name: accueil
 */
 ?>
 
