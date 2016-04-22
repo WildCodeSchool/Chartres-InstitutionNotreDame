@@ -7,9 +7,9 @@
 		<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/bootstrap.css">
 
 		<link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>">
-		<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/script/jquery.js"></script>
-		<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/script/bootstrap.js"></script>
-		<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/script/script.js"></script>
+		<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery.js"></script>
+		<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/bootstrap.js"></script>
+		<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/script.js"></script>
 	</head>
 	<body>
 		<!--HEADER -->
