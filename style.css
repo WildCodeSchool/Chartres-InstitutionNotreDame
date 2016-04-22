@@ -220,6 +220,11 @@ body
 /****HEADER****/
 /* HEADER */
 
+.container__header .header .header-title h2 {
+	font-size: 3em;
+	color: white;
+}
+
 .menu-top
 {
 	height:200px;
@@ -301,6 +306,16 @@ body
 	font-size:15px;
 	color:#428bca;
 	border-bottom:none;
+}
+
+.pronote {
+	background-color: yellow;
+}
+
+.lien-apel a {
+	list-style-type: none;
+	text-decoration: none;
+	color: white;
 }
 
 /* CONTENT */
