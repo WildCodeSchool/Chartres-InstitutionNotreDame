@@ -11,6 +11,7 @@ Template Name: template1
 
 <?php get_header(); ?>
 
+<!-- BANDEAU ================================ -->
 <div class="col-md-12 carousel">
 <?php
         $args = array(
