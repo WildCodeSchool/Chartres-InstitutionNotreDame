@@ -296,6 +296,10 @@ body
 	border-bottom:none;
 }
 
+.pronote {
+	background-color: yellow;
+}
+
 /* CONTENT */
 
 .global-div

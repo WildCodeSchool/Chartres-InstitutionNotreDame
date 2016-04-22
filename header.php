@@ -57,10 +57,10 @@
 				<h4>ESCC</h4>
 			</div>
 			<div class="col-md-1 menu-nav-part">
-				<h4>Apel</h4>
+				<a href="https://sites.google.com/site/apelsaintbenoitv2/"><h4>Apel</h4></a>
 			</div>
-			<div class="col-md-1 menu-nav-part">
-				<h4>Pronote</h4>
+			<div class="col-md-1 menu-nav-part pronote">
+				<a href="https://0280665w.index-education.net/pronote/"><h4>Pronote</h4></a>
 			</div>
 			<div class="col-md-1 menu-nav-part">
 				<h4>Contact</h4>
