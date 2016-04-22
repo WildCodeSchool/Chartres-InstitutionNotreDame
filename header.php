@@ -62,10 +62,10 @@
 			<div class="col-md-1 menu-nav-part pronote">
 				<a href="https://0280665w.index-education.net/pronote/"><h4>PRONOTE</h4></a>
 			</div>
-			<div class="col-md-1 menu-nav-part">
-				<h4>CONTACT</h4>
-			</div>
 			<div class="col-md-1 menu-nav-part" id="menu0"></div>
+			<div class="col-md-1 menu-nav-part lien-apel">
+				<a href="#ancre1"><h4>CONTACT</h4></a>
+			</div>
 			<div class="col-md-2">
 			<?php get_search_form(); ?>
 			</div>
@@ -109,6 +109,7 @@
 			    ?> 
 
 			    <div class="col-md-12 main-top">
+			    	<div class="titre-directeur"><h4><?php the_title(); ?></h4></div>
 			        <?php the_content(); ?>
 			    </div>
 
