@@ -3,11 +3,6 @@
 Template Name: Accueil établissement
 */
 ?>
-<?php
-/*
-Template Name: template1
-*/
-?>
 
 <?php get_header(); ?>
 
@@ -185,7 +180,7 @@ Template Name: template1
         ?> 
 
         <div class="col-md-3 main-actu">
-        	<img src="<?php the_post_thumbnail_url(); ?>">
+            <h4><?php the_title(); ?></h4>
             <?php the_content(); ?>
         </div>
 
