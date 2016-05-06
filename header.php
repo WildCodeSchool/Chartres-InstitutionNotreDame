@@ -25,14 +25,6 @@
 						<h1>Institution Notre Dame</h1>
 						<h2>Saint Ferdinand</h2>
 					</div>
-					<div class="projet-inter col-lg-4 col-md-4 col-sm-12 col-xs-12">
-						<div class="container-globe">
-							<div class="globe">
-				   				 <div class="map"></div>
-				 			 </div>	
-				 			 <span class="slogan">Sapere aude !</span>
-							</div>
-						</div>
 				</div>
 			</header>
 		</div>

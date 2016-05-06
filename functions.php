@@ -17,10 +17,6 @@ function register_my_menus() {
       'lycee-menu-3'  => __( 'lycee-menu-3' ),
       'escc-menu-1'  => __( 'escc-menu-1' ),
       'escc-menu-2'  => __( 'escc-menu-2' ),
-      'ecole-accueil-infos'  => __( 'ecole-accueil-infos' ),
-      'college-accueil-infos'  => __( 'college-accueil-infos' ),
-      'lycee-accueil-infos'  => __( 'lycee-accueil-infos' ),
-      'escc-accueil-infos'  => __( 'escc-accueil-infos' ),
       'footer-menu-1'  => __( 'footer-menu-1' ),
       'footer-menu-2'  => __( 'footer-menu-2' ),
     )

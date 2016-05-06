@@ -1,9 +1,37 @@
 /*
-Theme Name: ind
+Theme Name: Institution
 Author: WildCodeSchool
 Author URI: http://wildcodeschool.fr/
-Description: Thèe de l'Institution Notre Dame !
+Description: Thème de l'Institution Notre Dame !
 */
+
+/* ---------- GLOBAL ----------  */
+
+body
+{
+	background-color:#F2F2F2;
+	font-family: 'Calibri';
+}
+
+.main-offset
+{
+	height:25px;
+}
+
+img
+{
+	margin:10px;
+}
+
+.main-carousel img
+{
+	min-height:400px;
+	max-height:400px;
+	text-align:center;
+	margin:auto;
+	width:auto;
+}
+
 @font-face {
     font-family: 'Glyphicons Halflings';
 	src:url('css/font/glyphicons-halflings-regular.eot');
@@ -21,33 +49,28 @@ Description: Thèe de l'Institution Notre Dame !
 	font-style: normal;
 }
 
-/* GLOBAL */
-
-body
-{
-	background-color:#F2F2F2;
-	font-family: 'Calibri';
+.galerie img {
+	width: auto;
 }
 
-.main-offsetess
-{
-	height:25px;
+/* ---------- HEADER----------  */
+
+.btn-blue {
+  border: solid 1px transparent;
+  background-color: #357EBD;
+}
+.btn-blue-l {
+  border: solid 1px transparent;
+  background-color: #5E9CD2;
+}
+.gly-white {
+  color: #FFFFFF;
 }
 
-.main-carousel img
-{
-	max-height:500px;
-	text-align:center;
-	margin:auto;
-}
-/****HEADER****/
 .container__header {
   padding-left: 0;
   padding-right: 0;
   font-size: 16px !important;
-
-
-  /*background-color: #00587A;*/
 
   background-image: -webkit-linear-gradient(top, #5e9cd2 0%, #357ebd 100%);
   background-image: linear-gradient(to bottom, #5e9cd2 0%, #357ebd 100%);
@@ -100,125 +123,6 @@ body
   height: 100%;
 
 }
-/*STYLE ELEMENT GLOBE HEADER IND*/
-.container-globe {
-  display: flex;
-}
-.globe {
-  width: 100px;
-  height: 100px;
-  display: inline-block;
-  margin: 40px 20px;
-  border-radius: 50%;
-  -webkit-perspective: 1200px;
-  -moz-perspective: 1200px;
-  -ms-perspective: 1200px;
-  -o-perspective: 1200px;
-  perspective: 1200px;
-  -webkit-perspective-origin: 50% 50%;
-  -moz-perspective-origin: 50% 50%;
-  -ms-perspective-origin: 50% 50%;
-  -o-perspective-origin: 50% 50%;
-  perspective-origin: 50% 50%;
-  background: radial-gradient(circle at 100px 100px, #5cabff, #000);
-}
-
-.globe:before {
-  content: "";
-  position: absolute;
-  background: radial-gradient(circle at 50% 120%,  rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0) 70%);
-  border-radius: 50%;
-  bottom: 2.5%;
-  left: 5%;
-  opacity: 0.6;
-  height: 100%;
-  width: 90%;
-  -webkit-filter: blur(5px);
-  z-index: 2;
-}
-
-.map {
-  display: inline-block;
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  border-radius: 50%;
-  position: relative;
-  -webkit-transform-style: preserve-3d;
-  background:url(img/world-map1.png) repeat-x;
-  background-size: auto 100%;
-  -webkit-animation: move-map 30s infinite linear;
-  -moz-animation: move-map 30s infinite linear;
-  -o-animation: move-map 30s infinite linear;
-  -ms-animation: move-map 30s infinite linear;
-  animation: move-map 30s infinite linear;
-}
-
-@-moz-keyframes move-map {
-  0% {background-position: -849px 0;}
-  100% {background-position: 0 0;} 
-}
-
-@-webkit-keyframes move-map {
-  0% {background-position: 0 0;}
-  100% {background-position: -849px 0;}
-}
-
-@-o-keyframes move-map {
-  0% {background-position: -849px 0;}
-  100% {background-position: 0 0;}
-  }
-
-@-ms-keyframes move-map {
-  0% {background-position: -849px 0;}
-  100% {background-position: 0 0;}
-  }
-
-@keyframes move-map {
-  0% {background-position: -849px 0;}
-  100% {background-position: 0 0;}
-  }
-
-.slogan {
-  line-height: 100px;
-  height: 100px;
-  font-size: 30px;
-  font-family: 'Dancing Script';
-  margin-left: 15px;
-  margin-top: 20px;
-  transform: rotate(-6deg);
-  color: #BBA900;
-}
-@keyframes changeColor{/* Standard syntax */
-  0%{color:rgba(229,187,110,1);}
-  17%{color:rgba(187,174,152,1);}
-  34%{color:rgba(179,177,145,1);}
-  51%{color:rgba(250,234,115,1);}
-  68%{color:rgba(221,152,92,1);}
-  85%{color:rgba(127,91,88,1);}
-  100%{color:rgba(229,187,110,1);}
-}
-@-webkit-keyframes changeColor{/* Chrome, Safari, Opera */
-  0%{color:rgba(229,187,110,1);}
-  17%{color:rgba(187,174,152,1);}
-  34%{color:rgba(179,177,145,1);}
-  51%{color:rgba(250,234,115,1);}
-  68%{color:rgba(221,152,92,1);}
-  85%{color:rgba(127,91,88,1);}
-  100%{color:rgba(229,187,110,1);}
-}
-.slogan {
-  -webkit-animation-name:changeColor;
-  -webkit-animation-duration:14s;
-  -webkit-animation-iteration-count:2;
-  animation-name:changeColor;
-  animation-duration:14s;/*durée de l'animation*/
-  animation-iteration-count:2;/*durée de l'animation*/
-}
-
-
-/****HEADER****/
-/* HEADER */
 
 .container__header .header .header-title h2 {
 	font-size: 3em;
@@ -325,7 +229,19 @@ body
 	color: #428bca;
 }
 
-/* CONTENT */
+/* ---------- CONTENT ----------  */
+
+.template-content
+{
+	padding:25px;
+	background-color:#FFFFFF;
+}
+
+.template-content img
+{
+	text-align:center;
+	margin:auto;
+}
 
 .global-div
 {
@@ -357,46 +273,27 @@ body
 	color:#FFFFFF;
 }
 
+.director-img
+{
+	text-align:center;
+	min-height:350px;
+	padding:10px;
+	margin-top:10px;
+}
+
+.director-img img
+{
+	text-align:center;
+	height:auto;
+	width:70%;
+}
+
 .main-top
 {
 	margin-top:10px;
 	padding:10px;
 	background-color:#FFFFFF;
 	min-height:350px;
-}
-
-.main-top img
-{
-	width:30%;
-	float:left;
-	height:auto;
-	padding:10px;
-}
-
-.main-top p
-{
-	float:right;
-	height:auto;
-}
-
-.national-texte
-{
-	text-align:center;
-	margin-top:50px;
-}
-
-.national-texte-right
-{
-	margin-top:50px;
-	background-color:#FFFFFF;
-	min-height:250px;
-}
-
-.national-texte img
-{
-	width:80%;
-	height:auto;
-	margin:auto;
 }
 
 .main-actu
@@ -414,36 +311,11 @@ body
 	margin-left: 5%;
 }
 
-.main-actu p
-{
-	text-align:justify;
+/* ---------- FOOTER ----------  */
+
+.footer-part h4 {
+ 	margin-left: 10px;
 }
-
-.line-actu
-{
-	min-height:125px;
-	padding:10px;
-	background-color:#FFFFFF;
-}
-
-.line-actu h3
-{
-	font-size:20px;
-	font-weight:bold;
-}
-
-.line-actu p
-{
-	text-align:justify;
-}
-
-
-/* GALERIE */
-.galerie img {
-	width: auto;
-}
-
-/* FOOTER */
 
 .footer-top
 {
@@ -474,16 +346,13 @@ body
 .footer-menu li {
 	list-style-type: none;
 }
-}
 
 .footer-part h4 {
 	margin-left: 10px;
 }
 
-/* TEMPLATE CONTACT */
-/*
-*******STYLE SINGLE.PHP*******
-*/
+/* ---------- SINGLE ----------  */
+
 #single-h2 {
 	background-color: #5E9CD2; 
 	height: 50px;
@@ -534,34 +403,9 @@ body
 	font-style: italic;
 	font-size: 16px;
 }
-/*
-*******FIN STYLE SINGLE.PHP*******
-*/
 
-.footer-part h4 {
- 	margin-left: 10px;
-}
- /* TEMPLATE CONTACT */
- /*
-*******STYLE FORMULAIRE DE RECHERCHE*******
-*/
-.btn-blue {
-  border: solid 1px transparent;
-  background-color: #357EBD;
-}
-.btn-blue-l {
-  border: solid 1px transparent;
-  background-color: #5E9CD2;
-}
-.gly-white {
-  color: #FFFFFF;
-}
-/*
-*******FIN STYLE FORMULAIRE DE RECHERCHE*******
-*/
-/*
-*******STYLE SEARCH.PHP*******
-*/
+/* ---------- SEARCH ----------  */
+
 .search {
 	padding-left: 0px;
 	padding-right: 0px;
@@ -603,29 +447,11 @@ body
 	font-size: 18px;
 	text-transform:uppercase;
 }
-/*
-*******FIN STYLE SEARCH.PHP*******
-*/
 
-/*Template Contact*/
+/* ---------- CONTACT ----------  */
 
 .template_contact h3 {
 	font-size:30px;
 	margin: 20px 0 20px 0;
 	text-align: center;
 }
-
-/* TEMPLATE CONTENU */
-
-.template_contenu h3
-{
-	font-size: 40px;
-	margin: 20px 0 20px 0;
-	text-align: center;
-}
-
-.template_contenu_description
-{
- padding: 20px;
-}
-

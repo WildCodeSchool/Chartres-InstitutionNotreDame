@@ -4,6 +4,7 @@ Template Name: Album
 */
 ?>
 <?php get_header(); ?>
+
 <div class="col-md-12 global-large-div">
 	<div class="col-md-12 global-title">
 		<h3>ALBUM</h3>
@@ -30,4 +31,5 @@ Template Name: Album
     	</div>
     </div>
 </div>
+
 <?php get_footer(); ?>

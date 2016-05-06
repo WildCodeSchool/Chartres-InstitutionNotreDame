@@ -4,9 +4,8 @@ Template Name: Contact
 */
 ?>
 
-<?php
-get_header(); 
-?>
+<?php get_header(); ?>
+
 <div class="template_contact">
 	<div class="col-md-12">
 		<div class="row">
@@ -97,6 +96,5 @@ get_header();
 		</div>	
 	</div>
 </div>
-<?php
-get_footer(); 
-?>
+
+<?php get_footer(); ?>
